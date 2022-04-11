@@ -76,21 +76,6 @@ public class MobileController : MonoBehaviour
             Reset();
         }
 
-        if (swipeLeft && transform.position.x > -2.5)
-        {
-            positionToMove = new Vector3(transform.position.x - 1, transform.position.y, transform.position.z);
-        } else if (swipeRight && transform.position.x < 2.5)
-        {
-            positionToMove = new Vector3(transform.position.x + 1, transform.position.y, transform.position.z);
-        } else if (swipeUp && transform.position.y < 4.5)
-        {
-            positionToMove = new Vector3(transform.position.x, transform.position.y + 1, transform.position.z);
-        } else if (swipeDown && transform.position.y > -4.5)
-        {
-            positionToMove = new Vector3(transform.position.x, transform.position.y - 1, transform.position.z);
-        }
-        transform.position = Vector3.MoveTowards(transform.position, positionToMove, 25 * Time.deltaTime);
-
     }
 
     private void Reset()
