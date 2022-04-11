@@ -21,6 +21,6 @@ order to call this
 
 ## Versions
 
-## Auteurs
+## Authors
 
 * **Alexandre Malaquin** _alias_ [@Monfred156](https://github.com/Monfred156)
